@@ -42,6 +42,6 @@
 
 ## 已知限制
 
-- 依赖编写时 DSH 版本的内部契约（slot 名、gateway src-mode、typert 描述符格式、primitives 导出），DSH 大版本升级后可能需要适配；
+- 依赖编写时 DSH 版本（`@deepseek-ai/dsh` 0.2.1-rc.5）的内部契约（slot 名、gateway src-mode、typert 描述符格式、primitives 导出），DSH 大版本升级后可能需要适配；
 - 删除不可恢复，没有回收站；
 - 工具/命令路径只接受归档列表中的 id（`NOT_ARCHIVED` 拒绝），这是刻意的安全边界——不删活跃会话。

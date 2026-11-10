@@ -1,6 +1,6 @@
 # dsh-plugins
 
-我的 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/dsh) 插件仓库。每个子目录是一个自包含的 Cordis bundle 插件：纯 JavaScript、零外部依赖（不 import 任何 `@deepseek-ai/*` 包），复制即用。
+我的 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 插件仓库。每个子目录是一个自包含的 Cordis bundle 插件：纯 JavaScript、零外部依赖（不 import 任何 `@deepseek-ai/*` 包），复制即用。
 
 ## 插件列表
 
@@ -42,3 +42,11 @@ dsh-plugins/
     ├── icon.svg
     └── locale/
 ```
+
+## 引用
+
+- **DSH 仓库**：<https://github.com/deepseek-ai/deepseek-harness>（CLI 位于 `apps/cli`）
+- **npm 包**：[`@deepseek-ai/dsh`](https://www.npmjs.com/package/@deepseek-ai/dsh)
+- **开发与测试版本**：`@deepseek-ai/dsh` 0.2.1-rc.5（Windows，web profile）
+- **插件开发文档**：随包内置的 `cordis-plugin-development` skill（安装后位于 `<dsh 包目录>\node_modules\@deepseek-ai\dsh-agent-preset\skills\cordis-plugin-development\`，含 host-plugin / ui-plugin / user-actions / verification 等 references 与 decoration 模板）；配套 skill：`cordis-composition-reference`（Loader YAML 方言）、`editing-cordis-compositions`
+- **插件运行契约**：[Cordis](https://www.npmjs.com/package/@deepseek-ai/cordis) 服务/fiber 模型；Web UI 走 `window.__ModuleLoader__` 浏览器模块表（react、zod、`@deepseek-ai/dsh-client-ui-primitives` 等由宿主提供）

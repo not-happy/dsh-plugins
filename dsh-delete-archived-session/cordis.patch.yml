@@ -1,0 +1,6 @@
+- insert:
+    - id: delete-archived-session
+      name: dsh-delete-archived-session
+      config:
+        sessionsRoot: !!js dshHomePath('sessions')
+        projCacheDir: !!js dshHomePath('storages', 'session_projcache', 'sessions')

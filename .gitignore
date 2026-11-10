@@ -1,0 +1,11 @@
+# logs
+*.log
+
+# dependencies (plugins are dependency-free; safety net for pnpm link)
+node_modules/
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

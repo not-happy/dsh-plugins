@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Delete Archived Sessions",
+    "description": "Adds the delete_archived_session tool, the /delete-archived-session command, and a \"Delete session\" entry in the archived session row's dropdown menu: permanently delete one archived session, removing its stored log, projection-cache record, and workspace-registry entries."
+  }
+}
